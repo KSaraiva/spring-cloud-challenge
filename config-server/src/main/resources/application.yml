@@ -2,10 +2,10 @@ server:
   port: 8888
   
 spring:
-  profiles:
-    active: native
   cloud:
     config:
       server:
-        native:
-          search-locations: c:/dev/projects/java/spring-cloud-challenge
+        git:
+          uri: https://github.com/KSaraiva/spring-cloud-challenge-config-repo.git
+          search-paths: eats
+          default-label: main
